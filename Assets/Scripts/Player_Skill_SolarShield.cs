@@ -25,7 +25,7 @@ public class Player_Skill_SolarShield : Player_SkillObject
     private void FixedUpdate()
     {
         skillData.countSkill(Time.fixedDeltaTime);
-        if(skillData.isOnReady() && Input.GetMouseButton(0))
+        if(skillData.isOnReady() && Input.GetMouseButtonDown(MouseClick[LeftClick]))
         {
             skillData.activateSkill();
             playerWeapon.setWeaponDisabled(true);

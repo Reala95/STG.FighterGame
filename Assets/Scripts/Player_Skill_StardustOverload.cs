@@ -36,7 +36,7 @@ public class Player_Skill_StardustOverload : Player_SkillObject
 
         skillData.countSkill(Time.fixedDeltaTime);
         skillChargeCountText.text = "x" + skillData.getCurCharge();
-        if (skillData.hasAvaliableCharge() && Input.GetMouseButton(0) && !skillClicked)
+        if (skillData.hasAvaliableCharge() && Input.GetMouseButton(MouseClick[LeftClick]) && !skillClicked)
         {
             stardustTurret_L.putToOverload();
             stardustTurret_R.putToOverload();

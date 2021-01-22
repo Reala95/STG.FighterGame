@@ -17,6 +17,10 @@ TagManager:
   - Special/SolorShield
   - UI/Manager
   - Special/StardustTurret
+  - UI/LifeCount
+  - UI/PauseMenu
+  - UI/LostMenu
+  - UI/WinMenu
   layers:
   - Default
   - TransparentFX

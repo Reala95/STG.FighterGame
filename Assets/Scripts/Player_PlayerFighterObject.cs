@@ -9,7 +9,8 @@ public class Player_PlayerFighterObject : Common_FighterObject
     enum FighterStart
     {
         onBegin,
-        onAction
+        onAction,
+        onEnd
     }
 
     FighterStart startState = FighterStart.onBegin;
@@ -23,14 +24,11 @@ public class Player_PlayerFighterObject : Common_FighterObject
     int sensitive = 18;
 
     UI_HealBar healBar;
+    UI_GameManager gameManager;
 
     private void Awake()
     {
         FighterObjectAwake();
-    }
-
-    private void Start()
-    {
         safeShield = GameObject.FindGameObjectWithTag(playerSafeShieldTag);
         playerFighter = GetComponent<Rigidbody2D>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -38,6 +36,8 @@ public class Player_PlayerFighterObject : Common_FighterObject
 
         healBar = GameObject.FindGameObjectWithTag(uiHealBarTag).GetComponent<UI_HealBar>();
         healBar.initialize(gameObject);
+        gameManager = GameObject.FindGameObjectWithTag(uiManager).GetComponent<UI_GameManager>();
+        gameManager.setPauseAble(false);
     }
 
     private void FixedUpdate()
@@ -61,10 +61,16 @@ public class Player_PlayerFighterObject : Common_FighterObject
                     GameObject.FindGameObjectWithTag(playerSkillTag).GetComponent<Player_SkillObject>().getSkillData().disabled = false;
                     Cursor.lockState = CursorLockMode.Confined;
                     startState = FighterStart.onAction;
+
+                    gameManager.setPauseAble(true);
                 }
                 break;
         }
-        
+    }
+
+    private void OnDestroy()
+    {
+        gameManager.setPauseAble(false);
     }
 
     public void activateSafeShield()

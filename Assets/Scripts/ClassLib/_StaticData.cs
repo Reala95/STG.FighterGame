@@ -6,6 +6,14 @@ namespace Assets.Scripts.ClassLib
 {
     public class _StaticData
     {
+        public static string LeftClick = "LeftClick";
+        public static string RightClick = "RightClick";
+        public static Dictionary<string, int> MouseClick = new Dictionary<string, int>()
+        {
+            { LeftClick, 0 },
+            { RightClick, 1 }
+        };
+
         public static int selectedFighter = 2;
         public const int solor = 0;
         public const int vortex = 1;
@@ -23,6 +31,10 @@ namespace Assets.Scripts.ClassLib
         public static string uiHealBarTag = "UI/HealBar";
         public static string uiSPBarTag = "UI/SPBar";
         public static string uiManager = "UI/Manager";
+        public static string uiLifeCount = "UI/LifeCount";
+        public static string uiPauseMenu = "UI/PauseMenu";
+        public static string uiLostMenu = "UI/LostMenu";
+        public static string uiWinMenu = "UI/WinMenu";
         public static string specialSolorShieldTag = "Special/SolorShield";
 
         public static Vector3 itemVelocity = new Vector3(0, -0.5f, 0);
