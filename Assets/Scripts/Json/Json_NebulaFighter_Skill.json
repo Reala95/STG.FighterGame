@@ -1,0 +1,8 @@
+{
+  "skillCD": 90.0,
+  "skillDuration": 1.0,
+  "charge": 1,
+  "isInfiniteDuration": true,
+  "disabled": true,
+  "isNeedReadyText": false
+}

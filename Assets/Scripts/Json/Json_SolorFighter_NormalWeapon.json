@@ -1,0 +1,9 @@
+{
+  "waitTime": 0.0,
+  "fireCD": 0.05,
+  "reloadTime": 0.3,
+  "ammoAmount": 3,
+  "clipAmount": -1,
+  "isFiring": false,
+  "disabled": true
+}
