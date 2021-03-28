@@ -1,0 +1,45 @@
+{
+  "initPos": {
+    "x": 10.0,
+    "y": 4.0,
+    "z": 0.0
+  },
+  "routeList": [
+    {
+      "destination": {
+        "x": 7.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "linearVelocity": 3.0,
+      "waitTime": 0.0,
+      "isWeaponRefresh": false,
+      "isFireOnMove": false,
+      "isFireOnWait": false
+    },
+    {
+      "destination": {
+        "x": -5.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "linearVelocity": 3.0,
+      "waitTime": 0.0,
+      "isWeaponRefresh": true,
+      "isFireOnMove": true,
+      "isFireOnWait": false
+    },
+    {
+      "destination": {
+        "x": -5.0,
+        "y": -6.0,
+        "z": 0.0
+      },
+      "linearVelocity": 4.0,
+      "waitTime": 0.0,
+      "isWeaponRefresh": false,
+      "isFireOnMove": false,
+      "isFireOnWait": false
+    }
+  ]
+}

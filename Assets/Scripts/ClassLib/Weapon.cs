@@ -30,8 +30,8 @@ namespace StarFighter
         float curWaitTime = 0f;
         float curFireCD = 0f;
         float curReloadTime = 0f;
-        float curAmmoAmount = 0f; 
-        float curClipAmount = 0f;
+        int curAmmoAmount = 0; 
+        int curClipAmount = 0;
 
         // Initialize needed non-public variable after object is constructed (!Call this method after JsonUtility!) 
         public void initialize()
@@ -98,6 +98,16 @@ namespace StarFighter
             return state == WeaponState.onFire;
         }
 
+        public bool isOnReload()
+        {
+            return state == WeaponState.onReload;
+        }
+
+        public bool isOnEnd()
+        {
+            return state == WeaponState.onEnd;
+        }
+
         // Method for weapon fire and change to Reload or CD state dependents on the ammo remain (called after Instaite a bullet object)
         public void Fire()
         {
@@ -135,9 +145,9 @@ namespace StarFighter
             curFireCD = fireCD;
         }
 
-        public bool isOnEnd()
+        public int getCurAmmo()
         {
-            return state == WeaponState.onEnd;
+            return curAmmoAmount;
         }
     }
 }

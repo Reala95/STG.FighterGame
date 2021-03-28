@@ -1,0 +1,6 @@
+{
+  "maxHp": 300,
+  "bulletDef": 5,
+  "crashDef": 30,
+  "isInvincible": false
+}

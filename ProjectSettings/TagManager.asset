@@ -21,6 +21,7 @@ TagManager:
   - UI/PauseMenu
   - UI/LostMenu
   - UI/WinMenu
+  - UI/SEManager
   layers:
   - Default
   - TransparentFX

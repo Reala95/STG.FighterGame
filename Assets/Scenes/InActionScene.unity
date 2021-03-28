@@ -286,7 +286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: -125}
+  m_AnchoredPosition: {x: -225, y: -125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &214987261
@@ -578,12 +578,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327639006}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2430}
+  m_LocalScale: {x: 27, y: 27, z: 27}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1449126586}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425147385
 GameObject:
@@ -1474,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: -105}
+  m_AnchoredPosition: {x: -225, y: -105}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1011733838
@@ -1845,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215, y: -115}
+  m_AnchoredPosition: {x: 210, y: -115}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1325530646
@@ -2430,6 +2430,7 @@ RectTransform:
   - {fileID: 2009485470}
   - {fileID: 110374721}
   - {fileID: 1676749883}
+  - {fileID: 327639009}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3023,10 +3024,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752892258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e130ae9c13788e145a7340aed220b9c7, type: 3}
+  m_Script: {fileID: 11500000, guid: c4f81587576c8af4eaf54ca34f5975b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isFieldTesting: 0
+  selectedFighter: 0
   fighterList:
   - {fileID: 2997438029473377713, guid: 2105ef7446f3d414f864b89282305bc1, type: 3}
   - {fileID: 7889440663470007378, guid: 44e05735fce1cc8449dadd709dab5dee, type: 3}
